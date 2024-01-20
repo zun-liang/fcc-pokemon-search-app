@@ -6,13 +6,54 @@
   <link rel="icon" type="image/svg+xml" href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico" />
   <link rel="stylesheet" href="/src/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>freeCodeCamp Pokemon Search App</title>
+  <title>freeCodeCamp Pokémon Search App</title>
 </head>
 
 <body>
   <main>
     <img id="fcc-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="fcc-logo" />
-    <h1>Pokemon Search App</h1>
+    <h1>Pokémon Search App</h1>
+    <div id="app">
+      <label for="search-input">Search for Pokémon Name or ID:</label>
+      <input id="search-input" type="text" required />
+      <button id="search-button">Search</button>
+      <div id="pokemon-info">
+        <span id="pokemon-name"></span>
+        <span id="pokemon-id"></span>
+        <span id="weight"></span>
+        <span id="types"></span>
+      </div>
+      <table>
+        <tr>
+          <th>Base</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>HP:</td>
+          <td id="hp"></td>
+        </tr>
+        <tr>
+          <td>Attack:</td>
+          <td id="attack"></td>
+        </tr>
+        <tr>
+          <td>Defense:</td>
+          <td id="defense"></td>
+        </tr>
+        <tr>
+          <td>Sp. Attack:</td>
+          <td id="special-attack"></td>
+        </tr>
+        <tr>
+          <td>Sp. Defense:</td>
+          <td id="special-defense"></td>
+        </tr>
+        <tr>
+          <td>Speed:</td>
+          <td id="speed"></td>
+        </tr>
+      </table>
+    </div>
   </main>
   <script src="/src/main.ts"></script>
 </body>
