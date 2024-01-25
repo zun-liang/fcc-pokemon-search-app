@@ -14,14 +14,24 @@
     <img id="fcc-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="fcc-logo" />
     <h1>Pokémon Search App</h1>
     <div id="app">
-      <label for="search-input">Search for Pokémon Name or ID:</label>
-      <input id="search-input" type="text" required />
-      <button id="search-button">Search</button>
+      <form id="search-container">
+        <label for="search-input">Search for Pokémon Name or ID:</label>
+        <input id="search-input" type="text" required />
+        <button id="search-button" type="button">Search</button>
+      </form>
       <div id="pokemon-info">
-        <span id="pokemon-name"></span>
-        <span id="pokemon-id"></span>
-        <span id="weight"></span>
-        <span id="types"></span>
+        <div>
+          <div id="name-id">
+            <span id="pokemon-name"></span>
+            <span id="pokemon-id"></span>
+          </div>
+          <div id="weight-height">
+            <span id="weight"></span>
+            <span id="height"></span>
+          </div>
+        </div>
+        <div id="img"></div>
+        <div id="types"></div>
       </div>
       <table>
         <tr>
